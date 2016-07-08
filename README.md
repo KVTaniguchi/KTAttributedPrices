@@ -27,3 +27,4 @@ Kevin Taniguchi, ktaniguchi@urbn.com
 ## License
 
 KTAttributedPrices is available under the MIT license. See the LICENSE file for more info.
+# KTAttributedPrices
