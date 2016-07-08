@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03014910DDA61F6837D5A343D7822575 /* Pods-KTAttributedPrices_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C262F12D04B41625A1165EA91EEC9F /* Pods-KTAttributedPrices_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2409329AD01702421F93614009DEAEAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		2811E323BB6DD841CCE28BE9D203800D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4A79C9CDFCE61638083EE052B763B76B /* KTAttributedPrices-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6015CC9BFE87DD7BFBE4B763002F6C97 /* KTAttributedPrices-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FCB869D8389C1594C3BDD7827879DDE /* Pods-KTAttributedPrices_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD87842D4A9ED0258A134A48939DD8 /* Pods-KTAttributedPrices_Tests-dummy.m */; };
+		76F197C1BB70C637088D92CF92989428 /* KTAttributedPrices-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6A5F6B782CFA0B9F1A95FDFC58B044 /* KTAttributedPrices-dummy.m */; };
+		7CA50883E8E60E46C7667532FCC948C0 /* Pods-KTAttributedPrices_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1253A61C30190CDD489D833F3891654E /* Pods-KTAttributedPrices_Example-dummy.m */; };
+		B1FD7E96808FE48B9F35A115521EBC58 /* KTAttrPricesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00594851DFE97A1CDBD3EA5948DB266E /* KTAttrPricesProtocols.swift */; };
+		B76B5BBA1E2DE82A5F0E0FC6D942B291 /* Pods-KTAttributedPrices_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F055BDE488EC9783A54315B485FEAE /* Pods-KTAttributedPrices_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D616D47086D2F4C5E9CB605E1D082BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F570BA3ACF8F94DBAAEE840BCAC25E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B77CB9C3646E5D9BE644D56380887858;
+			remoteInfo = KTAttributedPrices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00594851DFE97A1CDBD3EA5948DB266E /* KTAttrPricesProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KTAttrPricesProtocols.swift; sourceTree = "<group>"; };
+		00AA8A2123FE32A9A4F6B88F84F02A8E /* Pods-KTAttributedPrices_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTAttributedPrices_Tests-resources.sh"; sourceTree = "<group>"; };
+		068F1B860F50AD1C9D52FD3C3875A8E4 /* Pods-KTAttributedPrices_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTAttributedPrices_Tests.modulemap"; sourceTree = "<group>"; };
+		1253A61C30190CDD489D833F3891654E /* Pods-KTAttributedPrices_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTAttributedPrices_Example-dummy.m"; sourceTree = "<group>"; };
+		1E068AC574969BCE818EA30B67BD41F7 /* Pods-KTAttributedPrices_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTAttributedPrices_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		267ED832E60D2273289CEABA5C0858C1 /* KTAttributedPrices.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTAttributedPrices.xcconfig; sourceTree = "<group>"; };
+		35D1CEE4762639250FFE379965AF249C /* Pods_KTAttributedPrices_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTAttributedPrices_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CF728D83B749CB396762230D7ABCDE /* Pods-KTAttributedPrices_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KTAttributedPrices_Example.modulemap"; sourceTree = "<group>"; };
+		3A53E048903EFFF590CAA9E1B09CDDC6 /* Pods-KTAttributedPrices_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTAttributedPrices_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4B39AB79579DF764004D7B0D7C4E9DAA /* Pods-KTAttributedPrices_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTAttributedPrices_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4FDD87842D4A9ED0258A134A48939DD8 /* Pods-KTAttributedPrices_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTAttributedPrices_Tests-dummy.m"; sourceTree = "<group>"; };
+		51F8108CAA9F8E968519E1E18BE4A89B /* Pods-KTAttributedPrices_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTAttributedPrices_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6015CC9BFE87DD7BFBE4B763002F6C97 /* KTAttributedPrices-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTAttributedPrices-umbrella.h"; sourceTree = "<group>"; };
+		61FCEBA397104A75316DBC3631EC2903 /* Pods-KTAttributedPrices_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTAttributedPrices_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6937D12206933CED9B5C9AE4B23F27D0 /* Pods-KTAttributedPrices_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTAttributedPrices_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B6A5F6B782CFA0B9F1A95FDFC58B044 /* KTAttributedPrices-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTAttributedPrices-dummy.m"; sourceTree = "<group>"; };
+		6E12C9D91007B17D428218EB88A0F505 /* Pods-KTAttributedPrices_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTAttributedPrices_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		74A3A29BC0A6041549FDBE5817D0B156 /* KTAttributedPrices-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTAttributedPrices-prefix.pch"; sourceTree = "<group>"; };
+		7F0D6FE78CA4BAEF896792C842259E9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DABFB19041375A597A4BB4BC67305F /* Pods-KTAttributedPrices_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTAttributedPrices_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8AC7567DFCD0082B2433825D1132B61A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CAE9970025D14FC7DA5A5E3CCE4C578 /* Pods_KTAttributedPrices_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTAttributedPrices_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D884844F4E713A973342F026167055F /* Pods-KTAttributedPrices_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTAttributedPrices_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8F055BDE488EC9783A54315B485FEAE /* Pods-KTAttributedPrices_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTAttributedPrices_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CDCD89BA71BAB8876571058EF5DBB6D7 /* KTAttributedPrices.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTAttributedPrices.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4C262F12D04B41625A1165EA91EEC9F /* Pods-KTAttributedPrices_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTAttributedPrices_Example-umbrella.h"; sourceTree = "<group>"; };
+		EA4511338756F9C2F2362447F831EED8 /* Pods-KTAttributedPrices_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTAttributedPrices_Example-resources.sh"; sourceTree = "<group>"; };
+		EE846FAE7C5926169CCC424EDF853FB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15770B3BBA68276F1851EDD6FA26575 /* Pods-KTAttributedPrices_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTAttributedPrices_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9C55DD6096D1D81A35A23B5B51D90E9 /* KTAttributedPrices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTAttributedPrices.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B73C3AFCDA3BDC166372644680CAF832 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2811E323BB6DD841CCE28BE9D203800D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAF89526244737B30820EA94603D4FB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D616D47086D2F4C5E9CB605E1D082BC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE304BDD4E6707C3955AC16D8851140F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2409329AD01702421F93614009DEAEAE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FFA9CEC02AEAC7E998C1BEBBCAB1414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCD89BA71BAB8876571058EF5DBB6D7 /* KTAttributedPrices.framework */,
+				8CAE9970025D14FC7DA5A5E3CCE4C578 /* Pods_KTAttributedPrices_Example.framework */,
+				35D1CEE4762639250FFE379965AF249C /* Pods_KTAttributedPrices_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		276DE34263A8737C847CA94755E4FC04 /* Pods-KTAttributedPrices_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7F0D6FE78CA4BAEF896792C842259E9B /* Info.plist */,
+				37CF728D83B749CB396762230D7ABCDE /* Pods-KTAttributedPrices_Example.modulemap */,
+				4B39AB79579DF764004D7B0D7C4E9DAA /* Pods-KTAttributedPrices_Example-acknowledgements.markdown */,
+				87DABFB19041375A597A4BB4BC67305F /* Pods-KTAttributedPrices_Example-acknowledgements.plist */,
+				1253A61C30190CDD489D833F3891654E /* Pods-KTAttributedPrices_Example-dummy.m */,
+				3A53E048903EFFF590CAA9E1B09CDDC6 /* Pods-KTAttributedPrices_Example-frameworks.sh */,
+				EA4511338756F9C2F2362447F831EED8 /* Pods-KTAttributedPrices_Example-resources.sh */,
+				D4C262F12D04B41625A1165EA91EEC9F /* Pods-KTAttributedPrices_Example-umbrella.h */,
+				61FCEBA397104A75316DBC3631EC2903 /* Pods-KTAttributedPrices_Example.debug.xcconfig */,
+				51F8108CAA9F8E968519E1E18BE4A89B /* Pods-KTAttributedPrices_Example.release.xcconfig */,
+			);
+			name = "Pods-KTAttributedPrices_Example";
+			path = "Target Support Files/Pods-KTAttributedPrices_Example";
+			sourceTree = "<group>";
+		};
+		32DEB07B61BB6BDF83742B63E4FA7A26 /* KTAttributedPrices */ = {
+			isa = PBXGroup;
+			children = (
+				D5152A495FB027EB9390D38DAC36A608 /* Classes */,
+			);
+			path = KTAttributedPrices;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				ED1026BF80FBE2A4162EAB6D0B3C849B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0FFA9CEC02AEAC7E998C1BEBBCAB1414 /* Products */,
+				F94817B9E4B4E302F0097CC7402104F7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E6EAB8E50DAF74FA3FB4A67033701F3 /* KTAttributedPrices */ = {
+			isa = PBXGroup;
+			children = (
+				32DEB07B61BB6BDF83742B63E4FA7A26 /* KTAttributedPrices */,
+				C3C7DADFD7370D1FCF4F8BCDDEC621B8 /* Support Files */,
+			);
+			name = KTAttributedPrices;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3C7DADFD7370D1FCF4F8BCDDEC621B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE846FAE7C5926169CCC424EDF853FB8 /* Info.plist */,
+				F9C55DD6096D1D81A35A23B5B51D90E9 /* KTAttributedPrices.modulemap */,
+				267ED832E60D2273289CEABA5C0858C1 /* KTAttributedPrices.xcconfig */,
+				6B6A5F6B782CFA0B9F1A95FDFC58B044 /* KTAttributedPrices-dummy.m */,
+				74A3A29BC0A6041549FDBE5817D0B156 /* KTAttributedPrices-prefix.pch */,
+				6015CC9BFE87DD7BFBE4B763002F6C97 /* KTAttributedPrices-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KTAttributedPrices";
+			sourceTree = "<group>";
+		};
+		D11F9174386A449A10AEA22FE597CDAB /* Pods-KTAttributedPrices_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8AC7567DFCD0082B2433825D1132B61A /* Info.plist */,
+				068F1B860F50AD1C9D52FD3C3875A8E4 /* Pods-KTAttributedPrices_Tests.modulemap */,
+				6937D12206933CED9B5C9AE4B23F27D0 /* Pods-KTAttributedPrices_Tests-acknowledgements.markdown */,
+				9D884844F4E713A973342F026167055F /* Pods-KTAttributedPrices_Tests-acknowledgements.plist */,
+				4FDD87842D4A9ED0258A134A48939DD8 /* Pods-KTAttributedPrices_Tests-dummy.m */,
+				1E068AC574969BCE818EA30B67BD41F7 /* Pods-KTAttributedPrices_Tests-frameworks.sh */,
+				00AA8A2123FE32A9A4F6B88F84F02A8E /* Pods-KTAttributedPrices_Tests-resources.sh */,
+				B8F055BDE488EC9783A54315B485FEAE /* Pods-KTAttributedPrices_Tests-umbrella.h */,
+				F15770B3BBA68276F1851EDD6FA26575 /* Pods-KTAttributedPrices_Tests.debug.xcconfig */,
+				6E12C9D91007B17D428218EB88A0F505 /* Pods-KTAttributedPrices_Tests.release.xcconfig */,
+			);
+			name = "Pods-KTAttributedPrices_Tests";
+			path = "Target Support Files/Pods-KTAttributedPrices_Tests";
+			sourceTree = "<group>";
+		};
+		D5152A495FB027EB9390D38DAC36A608 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				00594851DFE97A1CDBD3EA5948DB266E /* KTAttrPricesProtocols.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ED1026BF80FBE2A4162EAB6D0B3C849B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E6EAB8E50DAF74FA3FB4A67033701F3 /* KTAttributedPrices */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F94817B9E4B4E302F0097CC7402104F7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				276DE34263A8737C847CA94755E4FC04 /* Pods-KTAttributedPrices_Example */,
+				D11F9174386A449A10AEA22FE597CDAB /* Pods-KTAttributedPrices_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		51C033BE9AB2CD222809C18D8D37DBE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A79C9CDFCE61638083EE052B763B76B /* KTAttributedPrices-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B67185AF70FEF20E700C884C534DC4FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03014910DDA61F6837D5A343D7822575 /* Pods-KTAttributedPrices_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39E264C26BBF4F3E216C18752514077 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76B5BBA1E2DE82A5F0E0FC6D942B291 /* Pods-KTAttributedPrices_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2BC305ACC966ACC6DF11C7FB92FFCD2D /* Pods-KTAttributedPrices_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7DF5F5B211AB5812BF28C933B1A9DB6 /* Build configuration list for PBXNativeTarget "Pods-KTAttributedPrices_Tests" */;
+			buildPhases = (
+				0E232DBEBCE130347001CF24EC5D1A3F /* Sources */,
+				EE304BDD4E6707C3955AC16D8851140F /* Frameworks */,
+				C39E264C26BBF4F3E216C18752514077 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KTAttributedPrices_Tests";
+			productName = "Pods-KTAttributedPrices_Tests";
+			productReference = 35D1CEE4762639250FFE379965AF249C /* Pods_KTAttributedPrices_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C327BCD3F47DA9ACF28BD3710637258 /* Pods-KTAttributedPrices_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E699E89022507BB79BFB6101B65A9A16 /* Build configuration list for PBXNativeTarget "Pods-KTAttributedPrices_Example" */;
+			buildPhases = (
+				4E4D411105800FBBDFBEAD5C10799A6E /* Sources */,
+				B73C3AFCDA3BDC166372644680CAF832 /* Frameworks */,
+				B67185AF70FEF20E700C884C534DC4FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1BE4A85C17F4321941BC0AC8A175A5C /* PBXTargetDependency */,
+			);
+			name = "Pods-KTAttributedPrices_Example";
+			productName = "Pods-KTAttributedPrices_Example";
+			productReference = 8CAE9970025D14FC7DA5A5E3CCE4C578 /* Pods_KTAttributedPrices_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B77CB9C3646E5D9BE644D56380887858 /* KTAttributedPrices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8412C5D6429A4A15BC973B6BAF097FBE /* Build configuration list for PBXNativeTarget "KTAttributedPrices" */;
+			buildPhases = (
+				3CE0254B9809F6347F927E7A669DAB91 /* Sources */,
+				DAF89526244737B30820EA94603D4FB8 /* Frameworks */,
+				51C033BE9AB2CD222809C18D8D37DBE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KTAttributedPrices;
+			productName = KTAttributedPrices;
+			productReference = CDCD89BA71BAB8876571058EF5DBB6D7 /* KTAttributedPrices.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0FFA9CEC02AEAC7E998C1BEBBCAB1414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B77CB9C3646E5D9BE644D56380887858 /* KTAttributedPrices */,
+				8C327BCD3F47DA9ACF28BD3710637258 /* Pods-KTAttributedPrices_Example */,
+				2BC305ACC966ACC6DF11C7FB92FFCD2D /* Pods-KTAttributedPrices_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E232DBEBCE130347001CF24EC5D1A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FCB869D8389C1594C3BDD7827879DDE /* Pods-KTAttributedPrices_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CE0254B9809F6347F927E7A669DAB91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F197C1BB70C637088D92CF92989428 /* KTAttributedPrices-dummy.m in Sources */,
+				B1FD7E96808FE48B9F35A115521EBC58 /* KTAttrPricesProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E4D411105800FBBDFBEAD5C10799A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA50883E8E60E46C7667532FCC948C0 /* Pods-KTAttributedPrices_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1BE4A85C17F4321941BC0AC8A175A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KTAttributedPrices;
+			target = B77CB9C3646E5D9BE644D56380887858 /* KTAttributedPrices */;
+			targetProxy = 6F570BA3ACF8F94DBAAEE840BCAC25E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20A7D1A24DDE88DB252ED50BB503DEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61FCEBA397104A75316DBC3631EC2903 /* Pods-KTAttributedPrices_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KTAttributedPrices_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTAttributedPrices_Example/Pods-KTAttributedPrices_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KTAttributedPrices_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27C72747DCECAF0CFC738F27DCCE6F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267ED832E60D2273289CEABA5C0858C1 /* KTAttributedPrices.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KTAttributedPrices/KTAttributedPrices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTAttributedPrices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KTAttributedPrices/KTAttributedPrices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KTAttributedPrices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		572BD10C8CD207086D8E75EE997CF59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E12C9D91007B17D428218EB88A0F505 /* Pods-KTAttributedPrices_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KTAttributedPrices_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTAttributedPrices_Tests/Pods-KTAttributedPrices_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KTAttributedPrices_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		950F9E460A86B1A3070EF90AF0805291 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51F8108CAA9F8E968519E1E18BE4A89B /* Pods-KTAttributedPrices_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KTAttributedPrices_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTAttributedPrices_Example/Pods-KTAttributedPrices_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KTAttributedPrices_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D327F072EAD36361D70C6B717B5B622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267ED832E60D2273289CEABA5C0858C1 /* KTAttributedPrices.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KTAttributedPrices/KTAttributedPrices-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTAttributedPrices/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KTAttributedPrices/KTAttributedPrices.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KTAttributedPrices;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8A28AEB8E38C9571004835D6403CC89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F15770B3BBA68276F1851EDD6FA26575 /* Pods-KTAttributedPrices_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KTAttributedPrices_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KTAttributedPrices_Tests/Pods-KTAttributedPrices_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KTAttributedPrices_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8412C5D6429A4A15BC973B6BAF097FBE /* Build configuration list for PBXNativeTarget "KTAttributedPrices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C72747DCECAF0CFC738F27DCCE6F32 /* Debug */,
+				9D327F072EAD36361D70C6B717B5B622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7DF5F5B211AB5812BF28C933B1A9DB6 /* Build configuration list for PBXNativeTarget "Pods-KTAttributedPrices_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8A28AEB8E38C9571004835D6403CC89 /* Debug */,
+				572BD10C8CD207086D8E75EE997CF59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E699E89022507BB79BFB6101B65A9A16 /* Build configuration list for PBXNativeTarget "Pods-KTAttributedPrices_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A7D1A24DDE88DB252ED50BB503DEBC /* Debug */,
+				950F9E460A86B1A3070EF90AF0805291 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

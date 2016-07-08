@@ -1,0 +1,6 @@
+framework module KTAttributedPrices {
+  umbrella header "KTAttributedPrices-umbrella.h"
+
+  export *
+  module * { export * }
+}

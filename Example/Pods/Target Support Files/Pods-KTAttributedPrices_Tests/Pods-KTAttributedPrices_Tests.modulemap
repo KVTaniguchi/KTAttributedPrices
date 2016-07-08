@@ -1,0 +1,6 @@
+framework module Pods_KTAttributedPrices_Tests {
+  umbrella header "Pods-KTAttributedPrices_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
