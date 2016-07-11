@@ -14,6 +14,7 @@
 		88AF54AD6CA1A4E58B4FD34E /* Pods_KTAttributedPrices_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E0EC6028B4D4099F27B0C4 /* Pods_KTAttributedPrices_Example.framework */; };
 		C87C1D1937429EE503E56843 /* Pods_KTAttributedPrices_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969F7D08BA06A3D5041A67F9 /* Pods_KTAttributedPrices_Tests.framework */; };
 		F6363A1B1D335277008F6ED4 /* ExamplePricesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6363A1A1D335277008F6ED4 /* ExamplePricesViewController.swift */; };
+		F6363A1D1D335380008F6ED4 /* ExamplePriceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C5DA2272BD514B20476FB30B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D6E0EC6028B4D4099F27B0C4 /* Pods_KTAttributedPrices_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTAttributedPrices_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6363A1A1D335277008F6ED4 /* ExamplePricesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePricesViewController.swift; sourceTree = "<group>"; };
+		F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePriceModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */,
 			);
 			name = "Example for KTAttributedPrices";
 			path = KTAttributedPrices;
@@ -356,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F6363A1D1D335380008F6ED4 /* ExamplePriceModels.swift in Sources */,
 				F6363A1B1D335277008F6ED4 /* ExamplePricesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
