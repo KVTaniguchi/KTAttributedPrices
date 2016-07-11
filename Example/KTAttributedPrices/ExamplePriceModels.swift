@@ -14,7 +14,7 @@ struct SinglePrice {
     let promo: String?
 }
 
-struct RangeablePrice {
+struct RangedPrice {
     let listLow: Double
     let listHigh: Double
     let saleLow: Double

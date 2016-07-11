@@ -74,6 +74,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				607FACD21AFB9204008FA782 /* Example for KTAttributedPrices */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -136,7 +137,6 @@
 				86D3717FFD50040839CC193D /* KTAttributedPrices.podspec */,
 				C5DA2272BD514B20476FB30B /* README.md */,
 				8B4712EBB1F6AD3BC84ADF31 /* LICENSE */,
-				607FACD21AFB9204008FA782 /* Example for KTAttributedPrices */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
