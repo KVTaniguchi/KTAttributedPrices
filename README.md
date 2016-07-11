@@ -22,7 +22,7 @@ pod "KTAttributedPrices"
 
 ## Author
 
-Kevin Taniguchi, ktaniguchi@urbn.com
+Kevin Taniguchi, kvtaniguchi@gmail.com
 
 ## License
 
