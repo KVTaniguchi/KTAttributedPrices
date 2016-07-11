@@ -10,6 +10,8 @@ import UIKit
 import KTAttributedPrices
 
 class ExamplePricesViewController: UIViewController {
+    
+    let tableView = UITableView(frame: CGRectZero, style: .Plain)
 
     override func viewDidLoad() {
         super.viewDidLoad()
