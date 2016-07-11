@@ -17,6 +17,7 @@
 		B1FD7E96808FE48B9F35A115521EBC58 /* KTAttrPricesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00594851DFE97A1CDBD3EA5948DB266E /* KTAttrPricesProtocols.swift */; };
 		B76B5BBA1E2DE82A5F0E0FC6D942B291 /* Pods-KTAttributedPrices_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F055BDE488EC9783A54315B485FEAE /* Pods-KTAttributedPrices_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D616D47086D2F4C5E9CB605E1D082BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F62091271D2F45C300EAA909 /* KTAttrPriceProtocolExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62091261D2F45C300EAA909 /* KTAttrPriceProtocolExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EA4511338756F9C2F2362447F831EED8 /* Pods-KTAttributedPrices_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTAttributedPrices_Example-resources.sh"; sourceTree = "<group>"; };
 		EE846FAE7C5926169CCC424EDF853FB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F15770B3BBA68276F1851EDD6FA26575 /* Pods-KTAttributedPrices_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTAttributedPrices_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F62091261D2F45C300EAA909 /* KTAttrPriceProtocolExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTAttrPriceProtocolExtensions.swift; sourceTree = "<group>"; };
 		F9C55DD6096D1D81A35A23B5B51D90E9 /* KTAttributedPrices.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KTAttributedPrices.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				00594851DFE97A1CDBD3EA5948DB266E /* KTAttrPricesProtocols.swift */,
+				F62091261D2F45C300EAA909 /* KTAttrPriceProtocolExtensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F197C1BB70C637088D92CF92989428 /* KTAttributedPrices-dummy.m in Sources */,
+				F62091271D2F45C300EAA909 /* KTAttrPriceProtocolExtensions.swift in Sources */,
 				B1FD7E96808FE48B9F35A115521EBC58 /* KTAttrPricesProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
