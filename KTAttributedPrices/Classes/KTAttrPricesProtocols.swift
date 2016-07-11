@@ -10,12 +10,11 @@ import UIKit
 public typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NSAttributedString?)
 
 public protocol ListPriceable {
-    func listFormattedPrice(listPrice: NSNumber, textColor: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
+    func listFormattedPrice(listPrice: NSNumber, color: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
 }
 
 public protocol SalePriceable {
     func saleFormatedPrice(saleValue: NSNumber, color: UIColor) -> NSAttributedString?
-    func isMarkDown(salePrice: NSNumber) -> Bool
 }
 
 public protocol PromoPriceable {

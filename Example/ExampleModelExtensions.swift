@@ -9,10 +9,10 @@
 import Foundation
 import KTAttributedPrices
 
-extension SinglePrice {
+extension SinglePrice: ListPriceable, SalePriceable, ConstructPriceable {
     
 }
 
-extension RangeablePrice {
+extension RangeablePrice: RangePriceable, ConstructPriceable {
     
 }
