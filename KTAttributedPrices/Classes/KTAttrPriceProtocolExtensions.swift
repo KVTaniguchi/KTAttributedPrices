@@ -54,7 +54,7 @@ extension TotalPriceable {
 }
 
 extension ConstructPriceable {
-    func constructedPriceFromListPrice(prices: [NSAttributedString?]) -> NSAttributedString? {
+    func constructedPrices(prices: [NSAttributedString?]) -> NSAttributedString? {
         return prices.joinedConstructPriceablePrices
     }
 }

@@ -31,6 +31,5 @@ protocol TotalPriceable {
 }
 
 protocol ConstructPriceable {
-    func constructedPriceFromListPrice(prices: [NSAttributedString?]) -> NSAttributedString?
+    func constructedPrices(prices: [NSAttributedString?]) -> NSAttributedString?
 }
-
