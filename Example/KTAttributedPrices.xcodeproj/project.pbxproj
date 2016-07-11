@@ -15,6 +15,7 @@
 		C87C1D1937429EE503E56843 /* Pods_KTAttributedPrices_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969F7D08BA06A3D5041A67F9 /* Pods_KTAttributedPrices_Tests.framework */; };
 		F6363A1B1D335277008F6ED4 /* ExamplePricesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6363A1A1D335277008F6ED4 /* ExamplePricesViewController.swift */; };
 		F6363A1D1D335380008F6ED4 /* ExamplePriceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */; };
+		F6363A201D335935008F6ED4 /* ExampleModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6363A1F1D335935008F6ED4 /* ExampleModelExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,8 @@
 		C5DA2272BD514B20476FB30B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D6E0EC6028B4D4099F27B0C4 /* Pods_KTAttributedPrices_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTAttributedPrices_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6363A1A1D335277008F6ED4 /* ExamplePricesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePricesViewController.swift; sourceTree = "<group>"; };
-		F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePriceModels.swift; sourceTree = "<group>"; };
+		F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExamplePriceModels.swift; path = KTAttributedPrices/ExamplePriceModels.swift; sourceTree = "<group>"; };
+		F6363A1F1D335935008F6ED4 /* ExampleModelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModelExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for KTAttributedPrices */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				9D095DB2E33234D8FC04B664 /* Pods */,
@@ -93,12 +94,12 @@
 		607FACD21AFB9204008FA782 /* Example for KTAttributedPrices */ = {
 			isa = PBXGroup;
 			children = (
+				F6363A1E1D3358FE008F6ED4 /* ExampleModels */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				F6363A1A1D335277008F6ED4 /* ExamplePricesViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */,
 			);
 			name = "Example for KTAttributedPrices";
 			path = KTAttributedPrices;
@@ -135,6 +136,7 @@
 				86D3717FFD50040839CC193D /* KTAttributedPrices.podspec */,
 				C5DA2272BD514B20476FB30B /* README.md */,
 				8B4712EBB1F6AD3BC84ADF31 /* LICENSE */,
+				607FACD21AFB9204008FA782 /* Example for KTAttributedPrices */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -157,6 +159,16 @@
 				969F7D08BA06A3D5041A67F9 /* Pods_KTAttributedPrices_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6363A1E1D3358FE008F6ED4 /* ExampleModels */ = {
+			isa = PBXGroup;
+			children = (
+				F6363A1C1D335380008F6ED4 /* ExamplePriceModels.swift */,
+				F6363A1F1D335935008F6ED4 /* ExampleModelExtensions.swift */,
+			);
+			name = ExampleModels;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6363A201D335935008F6ED4 /* ExampleModelExtensions.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F6363A1D1D335380008F6ED4 /* ExamplePriceModels.swift in Sources */,
 				F6363A1B1D335277008F6ED4 /* ExamplePricesViewController.swift in Sources */,

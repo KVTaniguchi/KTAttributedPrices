@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KTAttributedPrices
 
 class ExamplePricesViewController: UIViewController {
 

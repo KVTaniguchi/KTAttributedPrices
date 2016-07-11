@@ -1,5 +1,5 @@
 //
-//  PricingProtocols.swift
+//  Pricingprotocols.swift
 //
 //  Created by Kevin Taniguchi on 7/7/16.
 //
@@ -7,29 +7,29 @@
 import Foundation
 import UIKit
 
-typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NSAttributedString?)
+public typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NSAttributedString?)
 
-protocol ListPriceable {
+public protocol ListPriceable {
     func listFormattedPrice(listPrice: NSNumber, textColor: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
 }
 
-protocol SalePriceable {
+public protocol SalePriceable {
     func saleFormatedPrice(saleValue: NSNumber, color: UIColor) -> NSAttributedString?
     func isMarkDown(salePrice: NSNumber) -> Bool
 }
 
-protocol PromoPriceable {
+public protocol PromoPriceable {
     func promoFormattedText(promo: String) -> NSAttributedString?
 }
 
-protocol RangePriceable {
+public protocol RangePriceable {
     func rangeFormattedPrices(priceRange: PriceRange, separatorColor: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
 }
 
-protocol TotalPriceable {
+public protocol TotalPriceable {
     func totalFromQuantity(quantity: Int, pricePerUnit: NSNumber, color: UIColor) -> NSAttributedString?
 }
 
-protocol ConstructPriceable {
+public protocol ConstructPriceable {
     func constructedPrices(prices: [NSAttributedString?]) -> NSAttributedString?
 }
