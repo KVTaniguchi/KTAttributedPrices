@@ -17,4 +17,6 @@ extension SinglePrice: AttributedPrices {
     var salePriceColor: UIColor {
         return UIColor.redColor()
     }
+    
+    
 }

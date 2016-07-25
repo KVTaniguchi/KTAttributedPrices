@@ -10,7 +10,6 @@ import Foundation
 
 private let currencyNumberFormatter = NSNumberFormatter()
 
-
 // Protocol Extensions that assist in generating the attributed strings
 extension AttributedPrices {
     func listFormattedPrice(listPrice: NSNumber, color: UIColor, isStrikeThrough: Bool) -> NSAttributedString? {
@@ -62,6 +61,43 @@ private let attributedSpaceSeparator = NSAttributedString(string: " ")
 
 private func strikethroughAttr(color: UIColor) -> [String: AnyObject] {
     return [NSForegroundColorAttributeName: color, NSStrikethroughStyleAttributeName: 1]
+}
+
+extension SequenceType where Generator.Element: NSAttributedString {
+    func joinWithSeparator(separator: NSAttributedString) -> NSAttributedString {
+        var shouldAddSeparator = true
+        return self.reduce(NSMutableAttributedString()) {(element, sequence) in
+            if shouldAddSeparator {
+                shouldAddSeparator = false
+            }
+            else {
+                element.appendAttributedString(separator)
+            }
+            element.appendAttributedString(sequence)
+            return element
+        }
+    }
+    
+    func joinWithSeparator(separator: String) -> NSAttributedString {
+        return joinWithSeparator(NSAttributedString(string: separator))
+    }
+}
+
+private func joinAttributedStringsWithSeparator(strings: [NSAttributedString?], separator: NSAttributedString) -> NSAttributedString? {
+    let unwrappedStrings = strings.flatMap{$0} as [NSAttributedString]
+    guard unwrappedStrings.count == strings.count else { return nil }
+    let finalString = NSMutableAttributedString()
+    for (index, string) in unwrappedStrings.enumerate() {
+        if index == 0 {
+            finalString.appendAttributedString(string)
+        }
+        else {
+            finalString.appendAttributedString(separator)
+            finalString.appendAttributedString(string)
+        }
+    }
+    
+    return finalString
 }
 
 extension _ArrayType where Generator.Element == NSAttributedString? {
