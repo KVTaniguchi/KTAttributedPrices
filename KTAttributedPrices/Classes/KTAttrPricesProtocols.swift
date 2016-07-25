@@ -7,28 +7,33 @@
 import Foundation
 import UIKit
 
-public typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NSAttributedString?)
+typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NSAttributedString?)
 
-public protocol ListPriceable {
-    func listFormattedPrice(listPrice: NSNumber, color: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
+private let currencyNumberFormatter = NSNumberFormatter()
+
+protocol AttributedPrices {
+    var strikeThroughColor: UIColor { get }
 }
 
-public protocol SalePriceable {
-    func saleFormatedPrice(saleValue: NSNumber, color: UIColor) -> NSAttributedString?
+protocol AttributedPricesForSummarySheet: AttributedPrices {
+    func attributedPrice(price: NSNumber) -> NSAttributedString?
 }
 
-public protocol PromoPriceable {
-    func promoFormattedText(promo: String) -> NSAttributedString?
+protocol AttributedPricesWithPromos: AttributedPrices {
+    func attributedPriceString(withPromo promo: NSAttributedString?) -> NSAttributedString?
 }
 
-public protocol RangePriceable {
-    func rangeFormattedPrices(priceRange: PriceRange, separatorColor: UIColor, isStrikeThrough: Bool) -> NSAttributedString?
+protocol AttributedSale: AttributedPrices {
+    var isSale: Bool { get }
+    var isMarkDown: Bool { get }
 }
 
-public protocol TotalPriceable {
-    func totalFromQuantity(quantity: Int, pricePerUnit: NSNumber, color: UIColor) -> NSAttributedString?
+protocol AttributedProductPromotion {
+    var promoString: NSAttributedString? { get }
 }
 
-public protocol ConstructPriceable {
-    func constructedPrices(prices: [NSAttributedString?]) -> NSAttributedString?
+protocol AttributedRangePrice: AttributedPrices {
+    var rangedListString: NSAttributedString? { get }
+    var rangedSaleString: NSAttributedString? { get }
+    var hasPriceRange: Bool { get }
 }

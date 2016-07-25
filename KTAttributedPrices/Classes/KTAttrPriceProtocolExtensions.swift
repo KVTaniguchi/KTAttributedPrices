@@ -10,76 +10,78 @@ import Foundation
 
 private let currencyNumberFormatter = NSNumberFormatter()
 
-// Protocol Extensions
-public extension ListPriceable {
+
+// Protocol Extensions that assist in generating the attributed strings
+extension AttributedPrices {
     func listFormattedPrice(listPrice: NSNumber, color: UIColor, isStrikeThrough: Bool) -> NSAttributedString? {
         guard let currencyList = currencyNumberFormatter.stringFromNumber(listPrice) else { return nil }
-        let attr = isStrikeThrough ? [NSForegroundColorAttributeName: color, NSStrikethroughStyleAttributeName: 1] : [NSForegroundColorAttributeName: color]
-        return NSAttributedString(string: currencyList, attributes: attr)
+        
+        let listAttr = isStrikeThrough ? strikethroughAttr(color) : [NSForegroundColorAttributeName: color]
+        return NSAttributedString(string: currencyList, attributes: listAttr)
+    }
+    
+    func constructedPrice(list list: NSAttributedString?, sale: NSAttributedString?, promo: NSAttributedString? = nil, isMarkDown: Bool) -> NSAttributedString? {
+        return isMarkDown ? [sale, list, promo].joinAttributedPrices : [list, sale, promo].joinAttributedPrices
     }
 }
 
-public extension SalePriceable {
+extension AttributedSale {
     func saleFormatedPrice(saleValue: NSNumber, color: UIColor) -> NSAttributedString? {
         guard let currencySale = currencyNumberFormatter.stringFromNumber(saleValue) else { return nil }
-        return NSAttributedString(string: currencySale, attributes: [NSForegroundColorAttributeName: color])
+        
+        let salePriceAttr = [NSForegroundColorAttributeName: color]
+        return NSAttributedString(string: currencySale, attributes: salePriceAttr)
+    }
+    
+    func isMarkDown(salePrice: NSNumber) -> Bool {
+        return salePrice.floatValue % 10 != 0
     }
 }
 
-public extension PromoPriceable {
-    func promoFormattedText(promo: String) -> NSAttributedString {
-        return NSAttributedString(string: promo, attributes: [NSForegroundColorAttributeName: UIColor.darkGrayColor()])
+extension AttributedProductPromotion {
+    func promoFormattedText(promo: String?, color: UIColor) -> NSAttributedString? {
+        guard let promo = promo else { return nil }
+        return NSAttributedString(string: promo, attributes: [NSForegroundColorAttributeName: color])
     }
 }
 
-public extension RangePriceable {
-    func rangeFormattedPrices(priceRange: PriceRange, separatorColor: UIColor, isStrikeThrough: Bool) -> NSAttributedString? {
-        guard let rangedPriceString = [priceRange.lowPriceString, priceRange.highPriceString].joinWithSeparator(NSAttributedString(string: "-", attributes: [NSForegroundColorAttributeName: separatorColor])) else { return nil }
+extension AttributedRangePrice {
+    func rangeFormattedPrices(priceRange: PriceRange, color: UIColor, isStrikeThrough: Bool) -> NSAttributedString? {
+        guard let rangedPriceString = [priceRange.lowPriceString, priceRange.highPriceString].join(withSeparator: NSAttributedString(string: "-", attributes: [NSForegroundColorAttributeName: color])) else { return nil }
         guard !isStrikeThrough else {
             let strikableString = NSMutableAttributedString(attributedString: rangedPriceString)
-            strikableString.addAttributes(listPriceStrikeThoughAttr, range: NSRange(location: 0, length: strikableString.length))
+            strikableString.addAttributes(strikethroughAttr(strikeThroughColor), range: NSRange(location: 0, length: strikableString.length))
             return strikableString
         }
         return rangedPriceString
     }
 }
 
-public extension TotalPriceable {
-    func totalFromQuantity(quantity: Int, pricePerUnit: NSNumber, color: UIColor) -> NSAttributedString? {
-        let totalPrice = Double(quantity) * Double(pricePerUnit)
-        guard let totalString = currencyNumberFormatter.stringFromNumber(totalPrice) else { return nil }
-        return NSAttributedString(string: totalString, attributes: [NSForegroundColorAttributeName: color])
-    }
-}
-
-public extension ConstructPriceable {
-    func constructedPrices(prices: [NSAttributedString?]) -> NSAttributedString? {
-        return prices.joinedConstructPriceablePrices
-    }
-}
-
 // MARK Internal methods
 private let attributedSpaceSeparator = NSAttributedString(string: " ")
-private let listPriceStrikeThoughAttr = [NSForegroundColorAttributeName: UIColor.lightGrayColor(), NSStrikethroughStyleAttributeName: 1]
 
-public extension _ArrayType where Generator.Element == NSAttributedString? {
-    private func joinWithSeparator(separator: NSAttributedString) -> NSAttributedString? {
+private func strikethroughAttr(color: UIColor) -> [String: AnyObject] {
+    return [NSForegroundColorAttributeName: color, NSStrikethroughStyleAttributeName: 1]
+}
+
+extension _ArrayType where Generator.Element == NSAttributedString? {
+    private func join(withSeparator separator: NSAttributedString) -> NSAttributedString? {
         let unwrappedStrings = flatMap{$0} as [NSAttributedString]
         
-        var isFirst = true
+        var shouldAddSeparator = false
         return unwrappedStrings.reduce(NSMutableAttributedString(), combine: { (string, element) in
-            if isFirst {
-                isFirst = false
+            if shouldAddSeparator {
+                string.appendAttributedString(separator)
             }
             else {
-                string.appendAttributedString(separator)
+                shouldAddSeparator = true
             }
             string.appendAttributedString(element)
             return string
         })
     }
     
-    public var joinedConstructPriceablePrices: NSAttributedString? {
-        return joinWithSeparator(attributedSpaceSeparator)
+    var joinAttributedPrices: NSAttributedString? {
+        return join(withSeparator: attributedSpaceSeparator)
     }
 }
