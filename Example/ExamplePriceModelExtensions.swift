@@ -7,4 +7,14 @@
 //
 
 import Foundation
+import KTAttributedPrices
 
+extension SinglePrice: AttributedPrices {
+    var strikeThroughColor: UIColor {
+        return UIColor.lightGrayColor()
+    }
+    
+    var salePriceColor: UIColor {
+        return UIColor.redColor()
+    }
+}

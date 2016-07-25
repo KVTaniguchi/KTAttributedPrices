@@ -11,28 +11,29 @@ typealias PriceRange = (lowPriceString: NSAttributedString?, highPriceString: NS
 
 private let currencyNumberFormatter = NSNumberFormatter()
 
-protocol AttributedPrices {
+public protocol AttributedPrices {
     var strikeThroughColor: UIColor { get }
+    var salePriceColor: UIColor { get }
 }
 
-protocol AttributedPricesForSummarySheet: AttributedPrices {
+public protocol AttributedPricesForSummarySheet: AttributedPrices {
     func attributedPrice(price: NSNumber) -> NSAttributedString?
 }
 
-protocol AttributedPricesWithPromos: AttributedPrices {
+public protocol AttributedPricesWithPromos: AttributedPrices {
     func attributedPriceString(withPromo promo: NSAttributedString?) -> NSAttributedString?
 }
 
-protocol AttributedSale: AttributedPrices {
+public protocol AttributedSale: AttributedPrices {
     var isSale: Bool { get }
     var isMarkDown: Bool { get }
 }
 
-protocol AttributedProductPromotion {
+public protocol AttributedProductPromotion {
     var promoString: NSAttributedString? { get }
 }
 
-protocol AttributedRangePrice: AttributedPrices {
+public protocol AttributedRangePrice: AttributedPrices {
     var rangedListString: NSAttributedString? { get }
     var rangedSaleString: NSAttributedString? { get }
     var hasPriceRange: Bool { get }
